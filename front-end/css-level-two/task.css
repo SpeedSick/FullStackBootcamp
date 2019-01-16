@@ -1,0 +1,33 @@
+h1 {
+  font-family: Coiny, cursive;
+  text-align: center;
+}
+
+.art {
+  width: 100px;
+  margin: auto;
+  table-layout: fixed;
+}
+
+td {
+  height: 400px;
+  width: 200px;
+  border-spacing:10px;
+}
+
+#one {
+  background-color: 	#542913;
+}
+
+#two {
+  background-color: 		#735120;
+}
+#three {
+  background-color: 	#99866d;
+}
+#four {
+  background-color: #171436;
+}
+#five {
+  background-color: #d1c293;
+}
