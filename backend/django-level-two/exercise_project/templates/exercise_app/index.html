@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "exercise_app/style.css" %}">
+  </head>
+  <body>
+    <h1>Here is the list of all users</h1>
+    <ol>
+      {% for user in users %}
+      <li>
+      <ul>
+        <p>User Info:</p>
+        <li>{{user.first_name}}</li>
+        <li>{{user.last_name}}</li>
+        <li>{{user.email}}</li>
+      </ul>
+      </li>
+      {% endfor %}
+    </ol>
+  </body>
+</html>
