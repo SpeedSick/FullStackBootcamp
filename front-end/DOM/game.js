@@ -1,17 +1,14 @@
 matrix = document.querySelectorAll('td');
 
-let changeContent = function(item) {
-  console.log(item.textContent);
-  if(item.textContent === 'X') item.textContent = 'O';
-  else if(item.textContent === 'O') item.textContent = '';
-  else item.textContent = 'X';
+let changeContent = function() {
+  if(this.textContent === 'X') this.textContent = 'O';
+  else if(this.textContent === 'O') this.textContent = '';
+  else this.textContent = 'X';
 }
 
-for(let i = 0; i < matrix.length; ++i) {
-  matrix[i].addEventListener('click', function() {
-    changeContent(matrix[i]);
-  });
-}
+matrix.forEach(function(item) {
+  item.addEventListener('click', changeContent);
+});
 
 button = document.querySelector('#b');
 
